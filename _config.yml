@@ -1,28 +1,48 @@
-title: Jaengyi
-description: Jaengyi's Tech Blog
-author: Hyoung-Wook.Oh
-logo: /jaengyi.github.io/static/img/jaengyi.jpg
-github: https://github.com/jaengyi
-about: Developer
-
+# Setup
+title: Dark Poole
+url: https://jaengyi.github.io
+paginate: 1
 baseurl: ""
-url: ""
+permalink: pretty
 
-allowsearch: true
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
 
-disqus_shortname: jaengyi
-google_analytics: UA-72862926-1
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
 
-share:
-  twitter_username: \#
-  fb_appid: 000000000000
+sass:
+  sass_dir: _sass
+  style: :compressed
 
+# Options
 
-enableTags: true
-tagarray: []
+# Replace this value and uncomment to enable Google Analytics tracking
+# ga_analytics: UA-000000-0
 
-paginate: 20
-per_page: 20
-paginate_path: "/page:num/"
-markdown: kramdown
-gems: [jekyll-paginate, jekyll-gist]
+# Specify the author for blog posts
+author:
+  name: Mark Otto
+  url: https://jaengyi.github.io
+  email: jaengyi@gmail.com
+
+# Custom vars
+version: 3.0.0
+
+# Navbar page list
+nav:
+  - title: Blog
+    url: /archive
+
+  - title: About
+    url: /about
